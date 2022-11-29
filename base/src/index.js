@@ -13,7 +13,6 @@ import {
   setDefaultMountApp,
   runAfterFirstMounted,
 } from "qiankun";
-
 registerMicroApps(
   [
   {
@@ -23,7 +22,7 @@ registerMicroApps(
     activeRule: '/app-react1',
     props: {
       name: 'reactApp1Props',
-      type: 'one'
+      type: 'one',
     }
   },
   {
@@ -33,7 +32,7 @@ registerMicroApps(
     activeRule: '/app-react2',
     props: {
       name: 'reactApp2Props',
-      type: 'two'
+      type: 'two',
     }
   }
 ],
@@ -46,7 +45,7 @@ registerMicroApps(
   },
 );
 // 启动 qiankun
-// setDefaultMountApp('/app-react2');
+setDefaultMountApp('/app-react2');
 runAfterFirstMounted(() => {
   console.log('第一个微应用 mount 后需要调用的方法');
 });

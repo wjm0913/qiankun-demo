@@ -26,7 +26,10 @@ const App = () => {
     <Layout style={{ minHeight: '100vh' }}>
       <Sider collapsible collapsed={collapsed} onCollapse={onCollapse}>
         <div className="logo" />
-        <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+        <Menu theme="dark" defaultSelectedKeys={['0']} mode="inline">
+          <Menu.Item key="0" icon={<PieChartOutlined />}>
+            <Link to="/">主应用页面</Link>
+          </Menu.Item>
           <Menu.Item key="1" icon={<PieChartOutlined />}>
             <Link to="/app-react1">React应用1</Link>
           </Menu.Item>
@@ -52,7 +55,9 @@ const App = () => {
           </button>
         </Header>
         <Content style={{ margin: '16px' }}>
-          <div id="container" className="site-layout-background" style={{ minHeight: 360 }}></div>
+          <div id="container" className="site-layout-background" style={{ minHeight: 360 }}>
+            123212
+          </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>This Project ©2021 Created by DiDi</Footer>
       </Layout>

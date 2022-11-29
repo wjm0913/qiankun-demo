@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import action from "./action";
+import { BrowserRouter } from 'react-router-dom'
 
 let root = null;
 function render(props) {
@@ -17,7 +18,9 @@ function render(props) {
 
   root.render(
     <React.StrictMode>
-      <App store={{...props}}/>
+      <BrowserRouter basename={window.__POWERED_BY_QIANKUN__ ? '/app-react1' : '/'}>
+        <App store={{...props}}/>
+      </BrowserRouter>
     </React.StrictMode>
   );
 }
