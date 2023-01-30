@@ -33,6 +33,12 @@ const App = () => {
           <Menu.Item key="1" icon={<PieChartOutlined />}>
             <Link to="/app-react1">React应用1</Link>
           </Menu.Item>
+          <Menu.Item key="1" icon={<PieChartOutlined />}>
+            <Link to="/app-react1/home">app-react1/home</Link>
+          </Menu.Item>
+          <Menu.Item key="1" icon={<PieChartOutlined />}>
+            <Link to="/app-react1/about">app-react1/about</Link>
+          </Menu.Item>
           <Menu.Item key="2" icon={<DesktopOutlined />}>
             <Link to="/app-react2">React应用2</Link>
           </Menu.Item>

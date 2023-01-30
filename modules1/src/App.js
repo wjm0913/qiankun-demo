@@ -7,12 +7,12 @@ import {Routes, Route, NavLink} from "react-router-dom";
 const RouteExample = () => {
   return (
     <>
-      <NavLink exact to="/home" className='app-mian-link'>home</NavLink>
-      <br/>
-      <NavLink exact to="/about" className='app-mian-link'>About</NavLink>
-      <div>
-        121
-      </div>
+      {/*<NavLink exact to="/home" className='app-mian-link'>home</NavLink>*/}
+      {/*<br/>*/}
+      {/*<NavLink exact to="/about" className='app-mian-link'>About</NavLink>*/}
+      {/*<div>*/}
+      {/*  121*/}
+      {/*</div>*/}
       <br/>
       <Routes>
         <Route path="/home" element={<div>home</div>}/>
